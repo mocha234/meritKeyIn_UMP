@@ -1,7 +1,7 @@
 ### meritKeyIn_UMP
 
 ## What is this?
-This script save your time for not doing the manual participants' details data entry every time after an event!
+This script save club's secretary's time fby automating participants' details data entry every time after an event(previously done manually)!
 
 # Pre-requisite 
 - Laptop/Desktop that runs on Window
