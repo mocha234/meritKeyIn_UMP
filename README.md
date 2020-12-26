@@ -1,5 +1,16 @@
 # meritKeyIn_UMP
 
+# Pre-requisite 
+- Laptop/Desktop that runs on Window
+- Google Chrome Installed. Or Firefox(see source code and editing accordngly!), but simplicity, Chrome will do
+- Python interpreter (see guide on how to install)
+- Selenium package(see guide on how to install)
+
+# Disclaimer:
+This is not an official script to automate stuff. I just want to make things easier and hoping you DONT'T WASTE TIME on key in those participants' details manually!
+I'm not sure if I violated UMP's cyber security's rules(if there is), but I hope I don't!
+This is an open-source script, feel free to put up issue or fork it and play around. You can go through the code, I don't take your credentials!
+
 ## Guide
 
 Video Guide: https://drive.google.com/drive/folders/1IkTcxDrOzMnAPjyaxFCVS41iRgcRTdST?usp=sharing
@@ -29,5 +40,5 @@ Download this as .zip and unzip it.
 ```
 7. Follow along and get things done!
 
-
+Note: CTRL+C to stop the program.
 
