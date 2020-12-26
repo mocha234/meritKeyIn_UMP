@@ -1,4 +1,7 @@
-# meritKeyIn_UMP
+### meritKeyIn_UMP
+
+## What is this?
+This script save your time for not doing the manual participants' details data entry every time after an event!
 
 # Pre-requisite 
 - Laptop/Desktop that runs on Window
@@ -10,6 +13,7 @@
 This is not an official script to automate stuff. I just want to make things easier and hoping you DONT'T WASTE TIME on key in those participants' details manually!
 I'm not sure if I violated UMP's cyber security's rules(if there is), but I hope I don't!
 This is an open-source script, feel free to put up issue or fork it and play around. You can go through the code, I don't take your credentials!
+Do "Star" this if you find it useful!
 
 ## Guide
 
