@@ -5,7 +5,7 @@ This script save club's secretary's time fby automating participants' details da
 
 ## Preview
 
-<center><img src="https://raw.githubusercontent.com/mocha234/meritKeyIn_UMP/master/ezgif.com-gif-maker.gif" width="640" height="360" /></center>
+<img src="https://raw.githubusercontent.com/mocha234/meritKeyIn_UMP/master/ezgif.com-gif-maker.gif" width="960" height="540" />
 
 # Pre-requisite 
 - Laptop/Desktop that runs on Window
