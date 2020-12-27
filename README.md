@@ -32,7 +32,10 @@ Video Guide: https://drive.google.com/drive/folders/1IkTcxDrOzMnAPjyaxFCVS41iRgc
 # Text Guide:
 
 1. Download Python Interpreter(if don't have yet, just Google/Youtube how)
+> https://www.python.org/downloads/
 2. Open Command Prompt
+> Windows + R then "cmd"
+> or just search in your machine
 3. Install Selenium, a package which this script depends on, a lot.
 ```
 > pip install selenium
