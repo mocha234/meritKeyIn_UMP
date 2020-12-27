@@ -23,6 +23,8 @@ This is an open-source script, feel free to put up issue or fork it and play aro
 
 Do "Star" this if you find it useful!
 
+For any question, please email me!
+
 ## Guide
 
 Video Guide: https://drive.google.com/drive/folders/1IkTcxDrOzMnAPjyaxFCVS41iRgcRTdST?usp=sharing
