@@ -3,6 +3,10 @@
 ## What is this?
 This script save club's secretary's time fby automating participants' details data entry every time after an event(previously done manually)!
 
+## Preview
+
+<img src="https://raw.githubusercontent.com/mocha234/meritKeyIn_UMP/master/ezgif.com-gif-maker.gif" width="40" height="40" />
+
 # Pre-requisite 
 - Laptop/Desktop that runs on Window
 - Google Chrome Installed. Or Firefox(see source code and editing accordngly!), but simplicity, Chrome will do
