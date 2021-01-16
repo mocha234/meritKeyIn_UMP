@@ -37,6 +37,7 @@ Video Guide: https://drive.google.com/drive/folders/1IkTcxDrOzMnAPjyaxFCVS41iRgc
 > Windows + R then "cmd"
 > or just search in your machine
 3. Install Selenium, a package which this script depends on, a lot.
+(Note: execute the code directly from cmd/command prompt, don't have to run `> python` , check video!)
 ```
 > pip install selenium==3.141.0
 ```
