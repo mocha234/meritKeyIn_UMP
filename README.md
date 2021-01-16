@@ -38,7 +38,7 @@ Video Guide: https://drive.google.com/drive/folders/1IkTcxDrOzMnAPjyaxFCVS41iRgc
 > or just search in your machine
 3. Install Selenium, a package which this script depends on, a lot.
 ```
-> pip install selenium
+> pip install selenium==3.141.0
 ```
 4. Download this code using Git Clone
 ```
