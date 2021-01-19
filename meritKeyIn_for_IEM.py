@@ -99,7 +99,7 @@ browser.find_element_by_xpath(inputEmailID).send_keys(pwd)
 browser.find_element_by_xpath(inputCategory).click()
 sleep()
 browser.find_element_by_xpath(submitButton).click()
-browser.find_element_by_xpath(modalButton).click()
+#browser.find_element_by_xpath(modalButton).click()
 
 # Start Looping
 noOfParticipants = len(inputStudentID)
