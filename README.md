@@ -58,5 +58,5 @@ Download this as .zip and unzip it.
 ```
 7. Follow along and get things done!
 
-Note: CTRL+C to stop the program.
+Note: CTRL+C to stop the program. Also, those installing of packages, run only once to install it. When you have it in your machine, you cna just simply run python .....py to prompt it.
 
