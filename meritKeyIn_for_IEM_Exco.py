@@ -1,7 +1,7 @@
 import pip
 
 package = 'selenium==3.141.0'
-
+pass_package = 'stdiomask'
 def import_or_install(package):
     try:
         __import__(package)
@@ -10,15 +10,26 @@ def import_or_install(package):
         print("Selenium not installed, installing...")
         pip.main(['install', package])  
         print("Selenium Installed")
+        
+def pass_package_install(pass_package):
+    try:
+        __import__(pass_package)
+        print("stdiomask Installed") 
+    except ImportError:
+        print("stdiomask not installed, installing...")
+        pip.main(['install', pass_package])  
+        print("stdiomask Installed")
 
 import_or_install(package)
-
+pass_package_install(pass_package)
         
 import time
+import stdiomask
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import csv
 import sys
+
 
 # User input Variables
 name = ""
@@ -72,18 +83,17 @@ print("\t|                   github.com/mocha234                                
 print("\t+-----------------------------------------------------------------------------+")
 print("\n\t")
 
-name = input("\n\tSecretary's Matric ID: ")
-pwd = input("\tPassword: ")
+name = input("Secretary's Matric ID: ")
+pwd = stdiomask.getpass()
 
-print("\n\tSince there's no error for wrong password checking, please check if it's correct:")
-print("\tSecretary's Matric ID: " + name)
-print("\tPassword: " + pwd)
-isCorrect = input("\n\tProceed? (y/n):")
+# print("\n\tSince there's no error for wrong password checking, please check if it's correct:")
+# print("\tSecretary's Matric ID: " + name)
+# print("\tPassword: " + pwd)
+# isCorrect = input("\n\tProceed? (y/n):")
 
-if isCorrect != "y":
-    sys.exit(
-        "\n\tNoted! Please refill! (Pro-Tip: Press Up arrow key to call previous line)")
-
+# if isCorrect != "y":
+#     sys.exit(
+#         "\n\tNoted! Please refill! (Pro-Tip: Press Up arrow key to call previous line)")
 print("\n\tEvent's Merit Fill-In page's link:")
 eventLinkinEcomm = input("\n\t")
 print("\n\tDual check please? :)")
