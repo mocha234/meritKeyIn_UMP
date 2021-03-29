@@ -36,12 +36,7 @@ Video Guide: https://drive.google.com/drive/folders/1IkTcxDrOzMnAPjyaxFCVS41iRgc
 2. Open Command Prompt
 > Windows + R then "cmd"
 > or just search in your machine
-3. Install Selenium, a package which this script depends on, a lot.
-(Note: execute the code directly from cmd/command prompt, don't have to run `> python` , check video!)
-```
-> pip install selenium==3.141.0
-```
-4. Download this code using Git Clone
+3. Download this code using Git Clone
 ```
 > git clone https://github.com/mocha234/meritKeyIn_UMP.git
 ```
@@ -50,11 +45,11 @@ Download this as .zip and unzip it.
 
 5. Copy Path of that fodler and Change Directory to that folder
 ```
-> cd path/path/this_folder_name
+> cd path/path/this_folder_name <- Don't copy this, different machine, different path.
 ```
 6. Run the script
 ```
-> python meritKeyIn_UMP
+> python meritKeyIn_UMP.py
 ```
 7. Follow along and get things done!
 
