@@ -1,8 +1,28 @@
+import pip
+
+package = 'selenium==3.141.0'
+
+def import_or_install(package):
+    try:
+        __import__(package)
+        print("Selenium Installed") # Version 3.141.0
+    except ImportError:
+        print("Selenium not installed, installing...")
+        pip.main(['install', package])  
+        print("Selenium Installed")
+
+import_or_install(package)
+
+        
 import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import csv
 import sys
+
+
+
+
 
 # User input Variables
 name = ""
@@ -26,6 +46,9 @@ studentID = '//*[@id="studID"]'
 radioSelectStudent = '//*[@id="radio2"]'
 submitNewMember = "input[onclick^='return ValidateFields()']"
 
+
+        
+        
 # Load .csv to List
 inputStudentID = []
 with open('matricIDList.csv', newline='') as inputfile:
@@ -41,7 +64,6 @@ def sleep():
 
 def sleep1():
     time.sleep(1)
-
 
 # Start UI
 print("\n\t+-----------------------------------------------------------------------------+")

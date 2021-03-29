@@ -1,3 +1,19 @@
+import pip
+
+package = 'selenium==3.141.0'
+
+def import_or_install(package):
+    try:
+        __import__(package)
+        print("Selenium Installed") # Version 3.141.0
+    except ImportError:
+        print("Selenium not installed, installing...")
+        pip.main(['install', package])  
+        print("Selenium Installed")
+
+import_or_install(package)
+
+        
 import time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
