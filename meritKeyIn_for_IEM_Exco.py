@@ -94,6 +94,9 @@ pwd = stdiomask.getpass()
 # if isCorrect != "y":
 #     sys.exit(
 #         "\n\tNoted! Please refill! (Pro-Tip: Press Up arrow key to call previous line)")
+
+print("\n\tEvent's Merit Fill-In page's link should something like this:")
+print("\thttps://std-comm.ump.edu.my/ecommstudent/application_activities.jsp?action=UniversityCommiteeAdd&caa_ref_id=XXXXXX")
 print("\n\tEvent's Merit Fill-In page's link:")
 eventLinkinEcomm = input("\n\t")
 print("\n\tDual check please? :)")
