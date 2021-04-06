@@ -2,6 +2,8 @@ import pip
 
 package = 'selenium==3.141.0'
 pass_package = 'stdiomask'
+driver_package = 'chromedriver-autoinstaller'
+
 def import_or_install(package):
     try:
         __import__(package)
@@ -19,17 +21,29 @@ def pass_package_install(pass_package):
         print("stdiomask not installed, installing...")
         pip.main(['install', pass_package])  
         print("stdiomask Installed")
+        
+def driver_package_install(driver_package):
+    try:
+        __import__(driver_package)
+        print("chromeDriver Installed") 
+    except ImportError:
+        print("chromeDriver not installed, installing...")
+        pip.main(['install', driver_package])  
+        print("chromeDriver Installed")
 
 import_or_install(package)
 pass_package_install(pass_package)
+driver_package_install(driver_package)
         
 import time
 import stdiomask
 from selenium import webdriver
+import chromedriver_autoinstaller
 from selenium.webdriver.common.keys import Keys
 import csv
 import sys
 
+chromedriver_autoinstaller.install()
 
 # User input Variables
 name = ""

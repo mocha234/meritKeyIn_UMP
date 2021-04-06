@@ -2,6 +2,8 @@ import pip
 
 package = 'selenium==3.141.0'
 pass_package = 'stdiomask'
+driver_package = 'chromedriver-autoinstaller'
+
 def import_or_install(package):
     try:
         __import__(package)
@@ -19,20 +21,29 @@ def pass_package_install(pass_package):
         print("stdiomask not installed, installing...")
         pip.main(['install', pass_package])  
         print("stdiomask Installed")
+        
+def driver_package_install(driver_package):
+    try:
+        __import__(driver_package)
+        print("chromeDriver Installed") 
+    except ImportError:
+        print("chromeDriver not installed, installing...")
+        pip.main(['install', driver_package])  
+        print("chromeDriver Installed")
 
 import_or_install(package)
 pass_package_install(pass_package)
+driver_package_install(driver_package)
         
 import time
 import stdiomask
 from selenium import webdriver
+import chromedriver_autoinstaller
 from selenium.webdriver.common.keys import Keys
 import csv
 import sys
 
-
-
-
+chromedriver_autoinstaller.install()
 
 # User input Variables
 name = ""
@@ -57,8 +68,6 @@ radioSelectStudent = '//*[@id="radio2"]'
 submitNewMember = "input[onclick^='return ValidateFields()']"
 
 
-        
-        
 # Load .csv to List
 inputStudentID = []
 with open('matricIDList.csv', newline='') as inputfile:
@@ -74,6 +83,7 @@ def sleep():
 
 def sleep1():
     time.sleep(1)
+
 
 # Start UI
 print("\n\t+-----------------------------------------------------------------------------+")
@@ -133,7 +143,7 @@ browser.find_element_by_xpath(inputEmailID).send_keys(pwd)
 browser.find_element_by_xpath(inputCategory).click()
 sleep()
 browser.find_element_by_xpath(submitButton).click()
-#browser.find_element_by_xpath(modalButton).click()
+# browser.find_element_by_xpath(modalButton).click()
 
 # Start Looping
 noOfParticipants = len(inputStudentID)
