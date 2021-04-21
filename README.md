@@ -27,7 +27,7 @@ For any question, please email me!
 
 ## Guide
 
-Video Guide: https://drive.google.com/drive/folders/1IkTcxDrOzMnAPjyaxFCVS41iRgcRTdST?usp=sharing
+Video Guide: https://drive.google.com/drive/folders/1bVPcwk8toIxUT4-oIbK98dVqio8EV-Fq?usp=sharing
 
 # Text Guide:
 
