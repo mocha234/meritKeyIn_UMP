@@ -67,6 +67,7 @@ studentID = '//*[@id="studID"]'
 radioSelectStudent = '//*[@id="radio2"]'
 submitNewMember = "input[onclick^='return ValidateFields()']"
 
+
 # Load .csv to List
 inputStudentID = []
 with open('matricIDList.csv', newline='') as inputfile:
@@ -164,11 +165,10 @@ while i < noOfParticipants:
     # print(browser.title)
     browser.find_element_by_xpath(radioB).click()
     browser.find_element_by_xpath(studentID).send_keys(inputStudentID[i][0:7])
-    print(inputStudentID[i][0:7])
     browser.find_element_by_css_selector(selectInPopout).click()
     browser.find_element_by_xpath(radioSelectStudent).click()
     sleep1()
-   ## browser.switch_to.window(defaultWindow)
+    browser.switch_to.window(defaultWindow)
     # print(browser.title)
     browser.find_element_by_css_selector(submitNewMember).click()
     print("{matricID} ---> Done".format(matricID=inputStudentID[i]))
